@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>[栏目名称] · 单期卡片模板</title>
+<style>
+/* ═══════════════════════════════════════
+   改动点 ①：配色
+   想让主色变深红，只改 --brand 一行
+   ═══════════════════════════════════════ */
+:root{
+  --brand:#1F3A5F;
+  --accent:#B08D3F;
+  --ink:#222222;
+  --muted:#666666;
+  --weak:#888888;
+  --line:#E5E5E5;
+  --bg:#F7F6F3;
+  --card:#FFFFFF;
+  --ph:#EFEFEF;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:15px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:720px;margin:0 auto;padding:16px}
+
+header h1{font-size:20px;line-height:1.4;color:var(--brand);margin:0 0 8px;font-weight:700}
+header p{font-size:14px;line-height:1.6;color:var(--muted);margin:0 0 24px}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:16px;
+  margin:0 0 16px;
+}
+.year{font-size:13px;color:var(--accent);letter-spacing:.5px}
+h2{font-size:17px;line-height:1.5;color:var(--brand);margin:6px 0 8px;font-weight:700}
+.summary{font-size:15px;line-height:1.75;margin:0 0 16px}
+
+.quote{
+  border-left:3px solid var(--accent);
+  padding-left:12px;
+  color:#333;
+  margin:0 0 8px;
+  font-size:15px;
+  line-height:1.7;
+}
+.quote-src{font-size:12px;color:var(--weak);text-align:right;margin:0 0 16px}
+
+.ph{
+  background:var(--ph);
+  border:1px dashed #CCCCCC;
+  color:var(--weak);
+  text-align:center;
+  padding:28px 8px;
+  font-size:13px;
+  margin:0 0 16px;
+}
+.ph small{display:block;margin-top:4px;font-size:12px}
+
+.meta{
+  border-top:1px solid var(--line);
+  padding-top:10px;
+  margin-top:12px;
+  font-size:12px;
+  line-height:1.6;
+  color:var(--weak);
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px 14px;
+}
+
+footer{
+  font-size:12px;
+  line-height:1.6;
+  color:var(--weak);
+  padding:8px 0 32px;
+}
+
+@media (max-width:420px){
+  .wrap{padding:12px}
+  header h1{font-size:18px}
+  h2{font-size:16px}
+  .card{padding:14px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ═══════════════════════════════════════
+       改动点 ②：站点信息（只改这 3 行）
+       ═══════════════════════════════════════ -->
+  <header>
+    <h1>[学校名称] · [栏目名称]</h1>
+    <p>单期卡片模板。以下内容全部为占位符，请勿直接发布。</p>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       改动点 ③：卡片数据
+       复制整个 <article class="card"> ... </article> 块，
+       改里面的文字即可增加一期。
+       ═══════════════════════════════════════ -->
+  <article class="card">
+    <div class="year">[20XX年]</div>
+    <h2>[标题占位]</h2>
+    <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+
+    <p class="quote">「[引文占位]」</p>
+    <p class="quote-src">—— [署名占位]（[届别/身份]）</p>
+
+    <div class="ph">
+      [照片说明占位]
+      <small>[素材来源] · [授权状态]</small>
+    </div>
+
+    <div class="meta">
+      <span>素材来源：[素材来源链接]</span>
+      <span>授权状态：[A/B/C/D]</span>
+      <span>审核人：[审核人]</span>
+      <span>版次：v0.1</span>
+      <span>日期：20XX-__-__</span>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="year">[20XX年]</div>
+    <h2>[标题占位 2]</h2>
+    <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="ph">
+      [照片说明占位]
+      <small>[素材来源] · [授权状态]</small>
+    </div>
+
+    <div class="meta">
+      <span>素材来源：[素材来源链接]</span>
+      <span>授权状态：[A/B/C/D]</span>
+      <span>审核人：[审核人]</span>
+      <span>版次：v0.1</span>
+      <span>日期：20XX-__-__</span>
+    </div>
+  </article>
+
+  <!-- 无图片时，把 .ph 换成这一行：
+  <div class="ph">暂无影像，已列入征集范围</div>
+  -->
+
+  <footer>
+    本模板不含任何真实校史素材。素材归权利人所有，发布前须按 C-03 放行、C-09 取得同意。
+  </footer>
+</div>
+</body>
+</html>
